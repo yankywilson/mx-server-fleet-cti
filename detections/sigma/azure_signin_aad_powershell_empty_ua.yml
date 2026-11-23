@@ -1,0 +1,25 @@
+title: Azure AD PowerShell Sign-In With Empty or Bare Mozilla User Agent
+id: 47244c54-0f0d-519f-9df8-e5ff1c53a26f
+status: experimental
+description: Detects sign-in attempts to the Azure Active Directory PowerShell client with an empty user agent or the bare string "Mozilla/5.0". This pattern matches a password-spray toolset that used the resource-owner password credentials (ROPC) flow.
+references:
+    - https://github.com/yankywilson/mx-server-fleet-cti/blob/main/docs/spray-infrastructure.md
+author: Yanky Wilson
+date: 2026-11-23
+tags:
+    - attack.credential-access
+    - attack.t1110.003
+logsource:
+    product: azure
+    service: signinlogs
+detection:
+    selection_app:
+        AppDisplayName: 'Azure Active Directory PowerShell'
+    selection_ua_empty:
+        UserAgent: ''
+    selection_ua_bare:
+        UserAgent: 'Mozilla/5.0'
+    condition: selection_app and (selection_ua_empty or selection_ua_bare)
+falsepositives:
+    - Admin automation that strips the user agent. Exclude known admin source IPs.
+level: medium

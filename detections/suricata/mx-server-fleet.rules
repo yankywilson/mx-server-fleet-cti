@@ -1,0 +1,23 @@
+# mx_server fleet - Suricata rules (v2.0, 2026-11-23)
+# https://github.com/yankywilson/mx-server-fleet-cti
+#
+# Keywords checked against the Suricata documentation: tls.cert_issuer,
+# tls.cert_subject and tls.cert_serial are sticky buffers; tls.cert_serial
+# is matched as uppercase hex with colons.
+#
+# IMPORTANT: certificate rules (1000003-1000005) see the certificate only in
+# TLS 1.2 and earlier. In TLS 1.3 the certificate is encrypted. The Kafka
+# brokers negotiate TLS 1.3, so expect these rules to fire only on clients
+# that fall back to TLS 1.2. The IP rules (1000001-1000002) do not depend on TLS.
+#
+# SIDs 1000001-1000099 are in the local range. Renumber to fit your ruleset.
+
+alert ip $HOME_NET any -> [54.36.174.217,79.137.70.8,79.137.69.148,54.36.175.25,79.137.70.34,54.36.174.220,54.36.174.236,79.137.70.17] any (msg:"MXFLEET Traffic to mx_server fleet OVH server (native IP)"; classtype:bad-unknown; reference:url,github.com/yankywilson/mx-server-fleet-cti/blob/main/iocs/servers.csv; metadata:created_at 2026_11_23, confidence High; sid:1000001; rev:1;)
+
+alert ip $HOME_NET any -> [212.69.8.0/24,89.40.83.0/24,77.67.28.0/24,194.104.138.0/24,151.242.139.0/24,222.167.237.0/24,31.77.120.0/24,94.158.184.0/24] any (msg:"MXFLEET Traffic to mx_server fleet BYOIP front /24 (leased - review after lease ends)"; classtype:bad-unknown; reference:url,github.com/yankywilson/mx-server-fleet-cti/blob/main/docs/server-map.md; metadata:created_at 2026_11_23, confidence Medium; sid:1000002; rev:1;)
+
+alert tls $EXTERNAL_NET any -> $HOME_NET any (msg:"MXFLEET TLS certificate issued by fleet Kafka-Cluster-CA"; flow:established,to_client; tls.cert_issuer; content:"CN=Kafka-Cluster-CA"; classtype:bad-unknown; metadata:created_at 2026_11_23, confidence Medium; sid:1000003; rev:1;)
+
+alert tls $EXTERNAL_NET any -> $HOME_NET any (msg:"MXFLEET TLS certificate serial from fleet Kafka CA run (17:94:5F...B7:xx)"; flow:established,to_client; tls.cert_serial; content:"17:94:5F:83:2A:EA:9B:90:27:ED:E5:C1:CB:9E:F5:32:EF:E6:B7"; startswith; classtype:bad-unknown; metadata:created_at 2026_11_23, confidence High; sid:1000004; rev:1;)
+
+alert tls $EXTERNAL_NET any -> $HOME_NET any (msg:"MXFLEET TLS certificate with subject O=mx_server"; flow:established,to_client; tls.cert_subject; content:"O=mx_server"; classtype:bad-unknown; metadata:created_at 2026_11_23, confidence High; sid:1000005; rev:1;)

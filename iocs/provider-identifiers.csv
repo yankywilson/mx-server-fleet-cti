@@ -1,0 +1,13 @@
+type,value,context
+ovh_byoip_token,1a3e6beb59b5181644fa95739c6f45c8fe51b67cb21c45f2ee2b0caadc5554bf440eaace09f2dfecece6b1c2e877039ddf11b8cebb58d09555eaa90b8f6df620,RIPE descr of all 8 BYOIP /24s; written 2026-07-17 14:32-14:53 UTC
+ipxo_lessee,Company 6a53796d6yVdFmVm (ORG-PC1890-RIPE),"Holder of 31.77.120/24, 151.242.139/24, 212.69.8/24, 222.167.237/24; created 2026-07-15T17:45:43Z"
+ovh_server,ns3066510 (79.137.70.8),BYOIP 89.40.83.0/24 routed here
+m365_domain_verification,MS=ms76416861,"TXT on godsbarn.com, seen 2025-10 to 2025-12"
+m365_domain_verification,MS=ms76477259,"TXT on godsbarn.com, seen 2025-10 to 2025-12"
+m365_domain_verification,MS=ms21570894,"TXT on roscoweb.com, seen 2025-10 to 2025-12"
+irr_route6_batch,"2602:fad4:17::/48 - 2602:fad4:29::/48 (19 x /48), origin AS6079, mnt-by MNT-DCL-577",ARIN IRR objects created 2025-12-22 11:44:35-11:44:48 UTC; one lease order; exit addresses in 9 of these /48s seen in private spray telemetry
+irr_route6_maintainer,netutils-mnt on 2a0d:4b40::/29 (origin AS6079),RIPE route6 created 2026-02-11 10:19:01 UTC; same leasing platform as the batch above
+dns_nameserver_pair,asa.ns.cloudflare.com + miles.ns.cloudflare.com,"Shared by stickfigureballet.com, braxtonfreightway.com, richardtoddhunter.com, reedjordan.com (weak alone: pairs are shared across accounts)"
+registrar,Spaceship (IANA 3862),Registrar of the fleet domains checked in v2.0
+registrar_change_burst,2026-07-16 19:30:04-19:30:27 UTC,RDAP last-changed on three fleet domains within 23 s; 3 min before the 19:33:48 SOA burst
+ovh_server_rdns,ns3101242.ip-54-36-174.eu,OVH default rDNS of 54.36.174.217 until 2026-07-24; switched to tendersage.straightmembers.com 2026-07-25

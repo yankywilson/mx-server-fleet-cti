@@ -1,0 +1,29 @@
+netblock,fleet_hosts,provider,note,block_whole_24
+31.77.120.0/24,248,OVH BYOIP (IPXO-leased),IPXO lessee 'Company 6a53796d6yVdFmVm' (ORG-PC1890-RIPE),yes
+216.158.220.0/24,245,H4Y Technologies LLC,,yes
+151.242.139.0/24,244,OVH BYOIP (IPXO-leased),IPXO lessee 'Company 6a53796d6yVdFmVm' (ORG-PC1890-RIPE),yes
+77.67.28.0/24,241,OVH BYOIP (IPXO-leased),Internet Utilities Europe and Asia Ltd,yes
+94.158.184.0/24,237,OVH BYOIP (IPXO-leased),Internet Utilities Europe and Asia Ltd,yes
+212.69.8.0/24,237,OVH BYOIP (IPXO-leased),IPXO lessee 'Company 6a53796d6yVdFmVm' (ORG-PC1890-RIPE),yes
+89.40.83.0/24,236,OVH BYOIP (IPXO-leased),Internet Utilities Europe and Asia Ltd,yes
+206.232.102.0/24,235,H4Y Technologies LLC,,yes
+222.167.237.0/24,232,OVH BYOIP (IPXO-leased),IPXO lessee 'Company 6a53796d6yVdFmVm' (ORG-PC1890-RIPE),yes
+194.104.138.0/24,219,OVH BYOIP (IPXO-leased),Aiti Spektr ltd,yes
+95.216.122.0/24,29,Hetzner Online GmbH,,"no - mixed tenants, block listed IPs only"
+155.254.29.0/24,12,H4Y Technologies LLC,,"no - mixed tenants, block listed IPs only"
+192.158.230.0/24,11,H4Y Technologies LLC,,"no - mixed tenants, block listed IPs only"
+155.254.21.0/24,9,H4Y Technologies LLC,,"no - mixed tenants, block listed IPs only"
+155.254.30.0/24,7,H4Y Technologies LLC,,"no - mixed tenants, block listed IPs only"
+54.36.174.0/24,3,OVH dedicated server,,"no - mixed tenants, block listed IPs only"
+79.137.70.0/24,3,OVH dedicated server,,"no - mixed tenants, block listed IPs only"
+192.158.232.0/24,3,H4Y Technologies LLC,,"no - mixed tenants, block listed IPs only"
+192.158.238.0/24,3,H4Y Technologies LLC,,"no - mixed tenants, block listed IPs only"
+54.36.175.0/24,1,OVH dedicated server,,"no - mixed tenants, block listed IPs only"
+65.109.58.0/24,1,Hetzner Online GmbH,,"no - mixed tenants, block listed IPs only"
+79.137.69.0/24,1,OVH dedicated server,,"no - mixed tenants, block listed IPs only"
+155.254.25.0/24,1,H4Y Technologies LLC,,"no - mixed tenants, block listed IPs only"
+155.254.31.0/24,1,H4Y Technologies LLC,,"no - mixed tenants, block listed IPs only"
+192.154.253.0/24,1,Tier.Net Technologies LLC,,"no - mixed tenants, block listed IPs only"
+192.158.225.0/24,1,Tier.Net Technologies LLC,,"no - mixed tenants, block listed IPs only"
+15.204.194.100/32,1,OVH US LLC,reedjordan.com web/SMTP node (v2.0),"no - single IP, block the /32 only"
+95.216.122.254/32,1,Hetzner Online GmbH,mx3.devriendenvanjacob.com (v2.0),"no - mixed tenants, block listed IPs only"

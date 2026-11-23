@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this research, please cite it as below."
+title: "mx_server Fleet: From Leased IPs to the Operator's Servers"
+type: dataset
+version: "2.0"
+date-released: "2026-11-23"
+authors:
+  - family-names: Wilson
+    given-names: Yanky
+repository-code: "https://github.com/yankywilson/mx-server-fleet-cti"
+license: CC-BY-4.0
+abstract: >-
+  Independent OSINT analysis of a 2,463-host templated mail-server fleet on
+  leased BYOIP address space. Maps eight leased /24s to eight OVH dedicated
+  servers by SSH host key, documents a Kafka backend and a scripted
+  deployment, and links two fleet servers to Entra ID password-spray traffic.
+  Attribution not supported.
+keywords:
+  - cyber threat intelligence
+  - OSINT
+  - BYOIP
+  - IP leasing
+  - snowshoe spam
+  - password spraying
+  - infrastructure analysis

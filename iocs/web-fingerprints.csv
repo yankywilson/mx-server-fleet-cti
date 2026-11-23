@@ -1,0 +1,12 @@
+type,value,strength,note
+body_sha1,2979831850c7003c34c4b1dcc8c38d2d0a4dd84c,high,"446-byte Caddy page, title ""Server""; 246 hosts / 247 IPs / 50 apex domains in Validin"
+content_length,446,medium,"with title ""Server"" and Server: Caddy"
+html_title,Server,low alone,combine with Caddy + 446 bytes
+etag,"""dkb1fqjbnd35ce"" (15.204.194.100) / ""dkb1fv87lqycce"" (54.36.174.217)",high,decode to 2026-07-29 12:02:12.611 / 12:02:22.823 UTC
+last_modified,"Wed, 29 Jul 2026 12:02 GMT",medium,fleet deploy run
+meta,"robots noindex, nofollow; viewport width=device-width",low,
+fofa_header_hash,707484123,medium,FOFA header_hash shared by fleet apex pages
+fofa_fidv2,rbZa/Kd7V0CnXAwLs2vwRzE7dj81flkP,none,999+ hosts - generic Caddy
+jarm,40d40d40d00000000043d43d00043d6aff5ab0f4fc31897186312c9e639319,none,generic Caddy/Go (tens of millions)
+shodan_hash_high_ports,-1246004407,medium,"""HTTP/1.1 400 Bad Request / Connection: close"" on 12xxx-13xxx ports"
+smtp_dialogue,220 <host> ESMTP / 501 5.5.4 Invalid domain name / 214 HELO EHLO MAIL RCPT DATA RSET NOOP QUIT VRFY EXPN HELP STARTTLS,medium,byte-identical on 54.36.174.217 and 15.204.194.100

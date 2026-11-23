@@ -1,0 +1,30 @@
+title: Sign-In From Leased IPv6 Exit Ranges Used in Password Spraying
+id: 99c9128f-0198-55e8-975d-1e58a51729bd
+status: experimental
+description: Detects Entra ID sign-ins from a leased IPv6 batch (19 x /48 created in the IRR within 13 seconds on 2025-12-22) and two related /29s, all announced by AS6079. These ranges carried password-spray traffic in private telemetry.
+references:
+    - https://github.com/yankywilson/mx-server-fleet-cti/blob/main/iocs/ipv6-exit-ranges.csv
+author: Yanky Wilson
+date: 2026-11-23
+tags:
+    - attack.credential-access
+    - attack.t1110.003
+    - attack.command-and-control
+    - attack.t1090.002
+logsource:
+    product: azure
+    service: signinlogs
+detection:
+    selection:
+        IPAddress|cidr:
+            - '2602:fad4:17::/48'
+            - '2602:fad4:18::/45'
+            - '2602:fad4:20::/45'
+            - '2602:fad4:28::/47'
+            - '2a0d:4b40::/29'
+            - '2a0a:7e00::/29'
+    condition: selection
+falsepositives:
+    - Legitimate users of the same proxy or ISP-proxy service
+    - New lessees after the current lease ends
+level: medium

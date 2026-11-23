@@ -1,0 +1,7 @@
+prefix,origin_asn,leasing_platform,registry_evidence,observed,block_guidance
+2602:fad4:17::/48,AS6079,IPXO / Internet Utilities NA (MNT-DCL-577),ARIN IRR batch 2025-12-22 11:44:35-48 UTC,spray exits in 9 of the 19 /48s (private telemetry),sign-in block / Conditional Access named location; review after lease ends
+2602:fad4:18::/45,AS6079,IPXO / Internet Utilities NA (MNT-DCL-577),ARIN IRR batch 2025-12-22 11:44:35-48 UTC,spray exits in 9 of the 19 /48s (private telemetry),sign-in block / Conditional Access named location; review after lease ends
+2602:fad4:20::/45,AS6079,IPXO / Internet Utilities NA (MNT-DCL-577),ARIN IRR batch 2025-12-22 11:44:35-48 UTC,spray exits in 9 of the 19 /48s (private telemetry),sign-in block / Conditional Access named location; review after lease ends
+2602:fad4:28::/47,AS6079,IPXO / Internet Utilities NA (MNT-DCL-577),ARIN IRR batch 2025-12-22 11:44:35-48 UTC,spray exits in 9 of the 19 /48s (private telemetry),sign-in block / Conditional Access named location; review after lease ends
+2a0d:4b40::/29,AS6079,netutils-mnt (IPXO),RIPE route6 2026-02-11 10:19:01 UTC,spray exits (private telemetry),sign-in block; large shared range - monitor first
+2a0a:7e00::/29,AS6079,RADB MAINT-AS11404,route6 2026-09-17 21:07:43 UTC,spray exits (private telemetry),sign-in block; large shared range - monitor first

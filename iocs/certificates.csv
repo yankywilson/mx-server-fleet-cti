@@ -1,0 +1,10 @@
+role,subject,issuer,key_identifier_or_note,hosts
+smtp,"O=mx_server, CN=adamsethfox.com",self-signed,ECDSA P-256; valid 2026-07-29 to 2036-07-26 (observed generation),1660
+smtp,"O=mx_server, CN=agilehawk.gourmethazelnuts.com",self-signed,ECDSA P-256,529
+smtp,"O=mx_server, CN=agilebamboo.phoenixseniornews.com",self-signed,ECDSA P-256,242
+smtp,"O=mx_server, CN=alertbear.devriendenvanjacob.com",self-signed,ECDSA P-256,30
+kafka_broker,CN=79.137.70.8 (SAN IP:79.137.70.8),CN=Kafka-Cluster-CA,AKI AA:77:1C:B8:E5:D7:A5:98:2E:4F:FF:17:23:13:80:55:5C:65:50:3A; NotBefore 2026-08-17 15:37:11 UTC; seen on 89.40.83.56:9092,—
+kafka_broker,CN=79.137.69.148 (SAN IP:79.137.69.148),CN=Kafka-Cluster-CA,serial 17:94:5f:83:2a:ea:9b:90:27:ed:e5:c1:cb:9e:f5:32:ef:e6:b7:4e; NotBefore 2026-08-17 15:37:01 UTC; RSA-4096; served on 77.67.28.0/24,—
+kafka_broker,CN=54.36.174.217 (SAN IP:54.36.174.217),CN=Kafka-Cluster-CA,serial 17:94:5f:83:2a:ea:9b:90:27:ed:e5:c1:cb:9e:f5:32:ef:e6:b7:51; NotBefore 2026-08-17 15:37:12 UTC; RSA-4096; served on 212.69.8.0/24,—
+kafka_broker,NOT OBSERVED,CN=Kafka-Cluster-CA,serial ...b7:4f missing from the sequence; minted 15:37:01-15:37:11 UTC if it exists,—
+web (Caddy auto-TLS),CN=tendersage.straightmembers.com,Let's Encrypt YE1,SHA-256 1e46fa46404b8ccbd0a04442a5c5f12cbcb89880bfe057563eda7dc41af3f488; NotBefore 2026-09-27 07:53:24 UTC,1

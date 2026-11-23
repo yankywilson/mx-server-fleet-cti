@@ -1,0 +1,22 @@
+title: Go HTTP Client Sign-In to the Azure Portal
+id: acdc3a48-5e2a-5d32-bb5a-c3a5592f347a
+status: experimental
+description: Detects sign-in attempts to the Azure Portal application from the Go standard library HTTP client. Browsers do not send this user agent. Matches a password-spray toolset documented in this repository.
+references:
+    - https://github.com/yankywilson/mx-server-fleet-cti/blob/main/docs/spray-infrastructure.md
+author: Yanky Wilson
+date: 2026-11-23
+tags:
+    - attack.credential-access
+    - attack.t1110.003
+logsource:
+    product: azure
+    service: signinlogs
+detection:
+    selection:
+        AppDisplayName: 'Azure Portal'
+        UserAgent|startswith: 'Go-http-client'
+    condition: selection
+falsepositives:
+    - Internal tooling written in Go that signs in interactively to the Azure Portal (rare)
+level: high

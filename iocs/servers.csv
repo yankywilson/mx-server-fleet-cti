@@ -1,0 +1,9 @@
+server_ip,hostname,front_24,role,ssh_hostkey_md5,ssh_hostkey_sha256,ssh_banner,ports_seen,mapping_evidence,in_spray_telemetry
+54.36.174.217,tendersage.straightmembers.com,212.69.8.0/24,kafka_broker,d9:f9:6a:36:c3:48:25:87:4e:7d:7d:d3:d5:8b:23:af,383801cf775dffbe7ccd2a938b0a0dc85ab6020be7bc13561872ff368b7d4e7e,OpenSSH 9.6p1 Ubuntu-3ubuntu13.20,"22,25,53,80,443,9092,9093,13205",SSH key + Kafka cert CN,yes - one of two fleet IPs in private spray telemetry
+79.137.70.8,ns3066510.ip-79-137-70.eu,89.40.83.0/24,kafka_broker,c1:04:d3:40:53:61:c6:d9:34:60:ae:bb:98:23:d3:c0,,OpenSSH 9.6p1 Ubuntu-3ubuntu13.20,"22,25,53,80,443,9093,12109-12359 (~60)",SSH key + Kafka cert CN,
+79.137.69.148,crispoak.roscoweb.com,77.67.28.0/24,kafka_broker,d5:7a:4e:ef:e7:14:6b:49:ed:8d:e6:e7:a2:94:c2:62,,OpenSSH 9.6p1 Ubuntu-3ubuntu13.20,"22,25,53,80,443,9092,9093,11920,12088",SSH key + Kafka cert CN,
+54.36.175.25,merryjasmine.mightenyip.com,194.104.138.0/24,worker,34:8f:68:2c:f2:b5:4f:47:cf:59:43:8b:b0:b3:b4:79,db3d5455d3bdb57095d338af30199487f06106018bc9e2e9a87fbb72d773ac20,OpenSSH 9.6p1 Ubuntu-3ubuntu13.19,"22,25,53,80,443,9101",SSH key + OpenSSH patch level,yes - one of two fleet IPs in private spray telemetry
+79.137.70.34,sagecastle.womandentists.com,151.242.139.0/24,worker,38:e8:b2:d0:af:94:21:c2:08:77:cb:51:4a:27:07:0b,,OpenSSH 9.6p1 Ubuntu-3ubuntu13.18,"22,25,53,80,443",SSH key + OpenSSH patch level,
+54.36.174.220,sharpwolf.quadramail.com,222.167.237.0/24,worker,94:7b:22:79:cd:fa:3b:9b:d5:75:76:42:a0:51:36:75,,OpenSSH 9.6p1 Ubuntu-3ubuntu13.20,"22,25,53,80,443",SSH key,
+54.36.174.236,keendaisy.phoenixseniornews.com,31.77.120.0/24,worker,23:c1:42:51:a5:18:d7:00:c0:a6:b3:c8:c9:7f:f7:96,,OpenSSH 9.6p1 Ubuntu-3ubuntu13.20,"22,25,53,80,443,13780",SSH key,
+79.137.70.17,darkcrest.listcellboard.com,94.158.184.0/24,worker,not captured (sshd: Exceeded MaxStartups),,not captured,"22,25,53,80,443,9101,12367-12577 (~45)",elimination + overlapping 123xx-125xx port block,
